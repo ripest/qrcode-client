@@ -1,7 +1,7 @@
 import qrcode
 from PyQt5.QtGui import QIcon
 
-from untitled import Ui_Form
+from .widget import Ui_Form
 from PyQt5.QtWidgets import QMainWindow, QAction, QFileDialog
 
 
