@@ -16,7 +16,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(534, 387)
         self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(90, 190, 75, 23))
+        self.pushButton.setGeometry(QtCore.QRect(50, 190, 150, 23))
         self.pushButton.setObjectName("pushButton")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(30, 60, 54, 12))
@@ -24,7 +24,12 @@ class Ui_Form(object):
         self.textEdit = QtWidgets.QTextEdit(Form)
         self.textEdit.setGeometry(QtCore.QRect(83, 40, 191, 71))
         self.textEdit.setObjectName("textEdit")
-
+        self.openPathButton = QtWidgets.QPushButton(Form)
+        self.openPathButton.setGeometry(QtCore.QRect(50, 170, 150, 23))
+        self.openPathButton.setObjectName("pushButton")
+        self.filePathlineEdit = QtWidgets.QLineEdit(self)
+        self.filePathlineEdit.setObjectName("filePathlineEdit")
+        self.filePathlineEdit.setGeometry(QtCore.QRect(200, 174, 300, 23))
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
@@ -33,3 +38,4 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.pushButton.setText(_translate("Form", "生成二维码"))
         self.label.setText(_translate("Form", "请输入："))
+        self.openPathButton.setText(_translate("Form", "选择生成的文件路径"))
